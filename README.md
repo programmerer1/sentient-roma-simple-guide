@@ -1,6 +1,6 @@
 # ROMA Quick Start Guide
 
-Undoubtedly, **ROMA** is a very powerful product with a wide range of features.  
+Undoubtedly, **ROMA** https://github.com/sentient-agi/ROMA is a very powerful product with a wide range of features.  
 However, this guide is intended only for **basic familiarization**, so it will not cover all capabilities.  
 Here you will find the simplest way to install and interact with ROMA via the API.
 
