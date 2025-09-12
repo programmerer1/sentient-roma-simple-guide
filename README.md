@@ -33,6 +33,26 @@ Go back to the ROMA root folder and open the .env file.
 Add your API keys for the supported services (not all are required).
 For example, you can set only OPENROUTER_API_KEY and EXA_API_KEY.
 
+.env file
+```bash
+# SentientResearchAgent Environment Configuration
+# Copy this file to .env and fill in your API keys
+
+# ===== LLM Provider Keys =====
+# OpenRouter API key (primary LLM provider)
+OPENROUTER_API_KEY=openrouter_api_key
+
+# OpenAI API key (optional - for direct OpenAI usage)
+OPENAI_API_KEY=your_openai_key_here
+
+# Google GenAI API key (optional - for Gemini models)
+GOOGLE_GENAI_API_KEY=your_google_genai_key_here
+
+# Anthropic API key (optional - for Claude models)
+ANTHROPIC_API_KEY=your_anthropic_key_here
+..............................
+```
+
 Open the .sentient.yaml file and update the configuration:
 
 ```bash
