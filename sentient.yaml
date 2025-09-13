@@ -6,7 +6,7 @@ llm:
   provider: "openrouter"  # Since you're using OpenRouter
   api_key: "${OPENROUTER_API_KEY}"  # Or OPENROUTER_API_KEY env var
   timeout: 300.0  # Increased to 5 minutes for complex code execution and reasoning
-  max_retries: 3
+  max_retries: 1
 
 # Cache System (for your sophisticated agent responses)  
 cache:
@@ -20,11 +20,11 @@ cache:
 execution:
   max_concurrent_nodes: 10  # Increased from 3 for better parallelization
   max_parallel_nodes: 8     # New: Maximum nodes to process in parallel batches
-  max_execution_steps: 5  # More steps for deep reasoning
+  max_execution_steps: 3  # More steps for deep reasoning
   rate_limit_rpm: 10  # Reduced from 60 to avoid Gemini rate limits
   enable_hitl: false
   hitl_timeout_seconds: 1200.0  # 10 minutes for human review
-  node_execution_timeout_seconds: 2400.0  # 40 minutes max for overall task execution
+  node_execution_timeout_seconds: 300  # 5 minutes max for overall task execution
   
   # New: State management optimization
   state_batch_size: 5      # Batch size for state updates
@@ -60,8 +60,8 @@ execution:
   force_root_node_planning: false  # Set to false to allow atomizer to decide for root nodes
   
   # NEW: Skip atomization entirely - forces hierarchy/depth-based execution decisions
-  skip_atomization: false  # Set to true to bypass atomizer and use max_recursion_depth rules
-  
+  skip_atomization: true  # Set to true to bypass atomizer and use max_recursion_depth rules
+  max_recursion_depth: 1
   # These are ignored when hitl_root_plan_only is true
   hitl_after_plan_generation: false
   hitl_after_modified_plan: false
