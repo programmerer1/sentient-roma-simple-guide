@@ -64,7 +64,7 @@ ANTHROPIC_API_KEY=your_anthropic_key_here
 ..............................
 ```
 
-Open the .sentient.yaml file and update the configuration:
+Open the sentient.yaml file and update the configuration:
 
 ```bash
 llm:
