@@ -80,7 +80,6 @@ Example configuration:
     model_id: "openrouter/deepseek/deepseek-chat-v3.1:free"
 ```
 ⚠️ Note: In the free version, some limitations apply.
-This repository also includes my own configuration (agents.yaml and sentient.yaml), so you can reuse it if you wish.
 
 ## Step 3. Restart Docker with New Settings
 After applying the changes, restart the containers:
