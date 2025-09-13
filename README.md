@@ -4,7 +4,7 @@ Undoubtedly, **ROMA** https://github.com/sentient-agi/ROMA is a very powerful pr
 However, this guide is intended only for **basic familiarization**, so it will not cover all capabilities.  
 Here you will find the simplest way to install and interact with ROMA via the API.
 
-** This guide is not intended to be the definitive manual. Its purpose is only to demonstrate the general principle of how it works. Before deploying the service to production, make sure to study the system on your own or refer to the official documentation from the developer. **
+**This guide is not intended to be the definitive manual. Its purpose is only to demonstrate the general principle of how it works. Before deploying the service to production, make sure to study the system on your own or refer to the official documentation from the developer.**
 
 ---
 
