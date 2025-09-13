@@ -373,3 +373,7 @@ I didn’t include the full JSON since it turned out to be quite large. As we ca
     }
 }
 ```
+Thanks to the fact that we registered the project, we can also view it in the web interface at http://localhost:3000/
+
+
+That’s it. I tried to share a small guide on how to send an API request in sentient-agi/ROMA. If there are any mistakes in the article or if you have any suggestions, please feel free to share them.
