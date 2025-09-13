@@ -184,10 +184,7 @@ Response from ROMA:
                         "model_name": "deepseek/deepseek-chat-v3.1:free",
                         "model_provider": "openrouter"
                     },
-                    "processing_completed": "2025-09-13T11:03:28.573014",
-                    "processing_started": "2025-09-13T11:03:28.586441",
-                    "success": true,
-                    "system_prompt": "" // Here there was a system prompt, but we don’t need it in this article. To keep the text from being too long, I removed it.
+                    "success": true
                 },
                 "full_result": null,
                 "goal": "What is recursion?",
@@ -231,18 +228,13 @@ Response from ROMA:
                 "output_summary": "Completed with dict",
                 "overall_objective": "What is recursion?",
                 "parent_node_id": "root",
-                "planned_sub_task_ids": [],
                 "status": "DONE",
-                "sub_graph_id": null,
                 "task_id": "root.1",
                 "task_type": "SEARCH"
             },
             "root.2": {
                 "agent_name": "BasicReasoningExecutor",
                 "aux_data": {
-                    "depends_on_indices": [
-                        0
-                    ],
                     "execution_details": {
                         "final_llm_input": "Current Task Goal: Plan how to structure the explanation of recursion, including key components like base case and recursive case\n\nContext:\nNo relevant context was provided.",
                         "model_info": {
@@ -251,11 +243,7 @@ Response from ROMA:
                             "model_name": "google/gemini-2.0-flash-exp:free",
                             "model_provider": "openrouter"
                         },
-                        "success": true,
-                        "system_prompt": "" // Here there was a system prompt, but we don’t need it in this article. To keep the text from being too long, I removed it.
-                    },
-                    "full_result": {
-                        "output_text": "" // Here there was a system plan, but we don’t need it in this article. To keep the text from being too long, I removed it.
+                        "success": true
                     }
                 },
                 "error": null,
@@ -267,11 +255,7 @@ Response from ROMA:
                         "model_name": "google/gemini-2.0-flash-exp:free",
                         "model_provider": "openrouter"
                     },
-                    "success": true,
-                    "system_prompt": "" // Here there was a system prompt, but we don’t need it in this article. To keep the text from being too long, I removed it.
-                },
-                "full_result": {
-                    "output_text": "" // Here there was a system plan, but we don’t need it in this article. To keep the text from being too long, I removed it.
+                    "success": true
                 },
                 "goal": "Plan how to structure the explanation of recursion, including key components like base case and recursive case",
                 "input_payload_summary": "Input payload with keys: current_task_id, current_goal, current_task_type, overall_project_goal, relevant_context_items, parent_hierarchy_context, formatted_full_context",
@@ -294,20 +278,14 @@ Response from ROMA:
             "root.3": {
                 "agent_name": "BasicReportWriter",
                 "aux_data": {
-                    "depends_on_indices": [
-                        0,
-                        1
-                    ],
                     "execution_details": {
-                        "final_llm_input": "", // Here there was a system prompt, but we don’t need it in this article. To keep the text from being too long, I removed it.
                         "model_info": {
                             "adapter_name": "BasicReportWriter",
                             "model_id": "openrouter/google/gemini-2.0-flash-exp:free",
                             "model_name": "google/gemini-2.0-flash-exp:free",
                             "model_provider": "openrouter"
                         },
-                        "success": true,
-                        "system_prompt": "" // Here there was a system prompt, but we don’t need it in this article. To keep the text from being too long, I removed it.
+                        "success": true
                     },
                     "full_result": {
                         "output_text": "Recursion is a programming technique where a function calls itself to solve smaller subproblems of the same type (Task ID: root.2). The explanation of recursion includes key components like the base case and recursive case (Task ID: root.2).\n\nThe base case is the condition that stops the recursion (Task ID: root.2). Without a base case, the function would call itself indefinitely, leading to a stack overflow error (Task ID: root.2). Examples of base cases include reaching 0 in a factorial function or finding an empty list in a list processing function (Task ID: root.2).\n\nThe recursive case is the part of the function where it calls itself with a modified input (Task ID: root.2). The modified input should move the problem closer to the base case (Task ID: root.2). The recursive call breaks down the problem into smaller, self-similar subproblems (Task ID: root.2).\n\nRecursive calls are managed on the call stack (Task ID: root.2). Each recursive call adds a new frame to the stack, and the base case triggers the unwinding of the stack (Task ID: root.2).\n\nClassic examples of recursion include factorial calculation, Fibonacci sequence, tree traversal, and binary search (Task ID: root.2).\n\nAdvantages of recursion include elegance, code conciseness, and suitability for certain problems (Task ID: root.2). Disadvantages include potential stack overflow errors, overhead of function calls, and difficulty in debugging (Task ID: root.2).\n\nTail recursion, where the recursive call is the last operation in the function, can be optimized by compilers to avoid stack overflow errors (Task ID: root.2). Recursion can also be compared with iteration (loops), and each approach is more appropriate for different scenarios (Task ID: root.2). A recursive function can be converted into an iterative one and vice versa (Task ID: root.2).",
@@ -316,15 +294,13 @@ Response from ROMA:
                 },
                 "error": null,
                 "execution_details": {
-                    "final_llm_input": "", // Here there was a system prompt, but we don’t need it in this article. To keep the text from being too long, I removed it.
                     "model_info": {
                         "adapter_name": "BasicReportWriter",
                         "model_id": "openrouter/google/gemini-2.0-flash-exp:free",
                         "model_name": "google/gemini-2.0-flash-exp:free",
                         "model_provider": "openrouter"
                     },
-                    "success": true,
-                    "system_prompt": "" //Here there was a system prompt, but we don’t need it in this article. To keep the text from being too long, I removed it.
+                    "success": true
                 },
                 "full_result": {
                     "output_text": "Recursion is a programming technique where a function calls itself to solve smaller subproblems of the same type (Task ID: root.2). The explanation of recursion includes key components like the base case and recursive case (Task ID: root.2).\n\nThe base case is the condition that stops the recursion (Task ID: root.2). Without a base case, the function would call itself indefinitely, leading to a stack overflow error (Task ID: root.2). Examples of base cases include reaching 0 in a factorial function or finding an empty list in a list processing function (Task ID: root.2).\n\nThe recursive case is the part of the function where it calls itself with a modified input (Task ID: root.2). The modified input should move the problem closer to the base case (Task ID: root.2). The recursive call breaks down the problem into smaller, self-similar subproblems (Task ID: root.2).\n\nRecursive calls are managed on the call stack (Task ID: root.2). Each recursive call adds a new frame to the stack, and the base case triggers the unwinding of the stack (Task ID: root.2).\n\nClassic examples of recursion include factorial calculation, Fibonacci sequence, tree traversal, and binary search (Task ID: root.2).\n\nAdvantages of recursion include elegance, code conciseness, and suitability for certain problems (Task ID: root.2). Disadvantages include potential stack overflow errors, overhead of function calls, and difficulty in debugging (Task ID: root.2).\n\nTail recursion, where the recursive call is the last operation in the function, can be optimized by compilers to avoid stack overflow errors (Task ID: root.2). Recursion can also be compared with iteration (loops), and each approach is more appropriate for different scenarios (Task ID: root.2). A recursive function can be converted into an iterative one and vice versa (Task ID: root.2).",
