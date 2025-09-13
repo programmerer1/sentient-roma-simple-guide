@@ -29,6 +29,15 @@ cd docker
 
 docker compose up -d
 ```
+If during the Docker installation you see an error like this:
+```bash
+=> ERROR [backend  9/13] COPY emergency_backups/ ./emergency_backups/
+=> ERROR [backend 10/13] COPY project_results/ ./project_results/  
+```
+then create the folders emergency_backups and project_results in the main ROMA directory, go back to the docker folder, and restart the installation.
+```bash
+docker compose up -d
+```
 
 ## Step 2. Configure the Environment
 Go back to the ROMA root folder and open the .env file.
